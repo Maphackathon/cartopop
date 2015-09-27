@@ -18,8 +18,8 @@
   "author": "Bobby Sudekum",
   "license": "ISC",
   "dependencies": {
-    "gazetteer": "^0.1.4",
-    "mapbox.js": "^2.1.5",
+    "leaflet": "^0.7.5",
+    "leaflet-iiif": "0.0.8",
     "react": "^0.13.1",
     "react-keybinding": "2.0.0-beta"
   },

@@ -52,12 +52,17 @@ var Map = React.createClass({
       zoomControl: false
     });
 
+    new L.Control.Zoom({ position: 'topright' }).addTo(_this.map);
+
     _this.map.attributionControl.setPrefix('<a href="http://www.davidrumsey.com/">David Rumsey</a> | <a href="http://library.stanford.edu">Stanford University Libraries</a>');
 
     $.getJSON(this.state.mapid, function (data) {
       _this.setState({ mapInfo: data });
       _this.map.attributionControl.addAttribution(data.attribution);
-      var iiifLayer = L.tileLayer.iiif(data.sequences[0].canvases[0].images[0].resource.service['@id'] + '/info.json', {});
+      var iiifLayer = L.tileLayer.iiif(data.sequences[0].canvases[0].images[0].resource.service['@id'] + '/info.json', {
+        tileSize: 1024
+      });
+
       _this.map.addLayer(iiifLayer);
       var firstTime = true;
       // Zoom in for more detail

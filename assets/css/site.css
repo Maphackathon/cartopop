@@ -176,3 +176,8 @@ h3 {
     transform: rotate(360deg);
   }
 }
+
+.leaflet-container .leaflet-control-attribution a {
+  color: #404040;
+  font-weight: 600;
+}

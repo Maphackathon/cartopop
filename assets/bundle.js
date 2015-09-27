@@ -57,7 +57,16 @@ var Map = React.createClass({
     $.getJSON(this.state.mapid, function (data) {
       _this.setState({ mapInfo: data });
       _this.map.attributionControl.addAttribution(data.attribution);
-      var iiifLayer = L.tileLayer.iiif(data.sequences[0].canvases[0].images[0].resource.service['@id'] + '/info.json', {}).addTo(_this.map);
+      var iiifLayer = L.tileLayer.iiif(data.sequences[0].canvases[0].images[0].resource.service['@id'] + '/info.json', {});
+      _this.map.addLayer(iiifLayer);
+      var firstTime = true;
+      // Zoom in for more detail
+      iiifLayer.on('loading', function () {
+        if (firstTime) {
+          _this.map.zoomIn(1);
+          firstTime = false;
+        }
+      });
       _this.handleInfo();
     });
   },

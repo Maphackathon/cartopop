@@ -1,16 +1,15 @@
 {
-  "name": "MapTab",
-  "description": "A tab extension for viewing your current location, date and time.",
-  "short_name": "MapTab",
-  "version": "1.12",
+  "name": "David Rumsey Map Collection - MapTab",
+  "description": "A tab extension for viewing the current date and time with a random map from the David Rumsey Map Collection",
+  "short_name": "DRMC - MapTab",
+  "version": "0.1",
   "incognito": "split",
   "offline_enabled": true,
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
-  "content_security_policy": "script-src 'self' https://wwww.mapbox.com/*; object-src 'self'",
+  "content_security_policy": "script-src 'self' http://*.stanford.edu/*; object-src 'self'",
   "permissions": [
-    "geolocation",
     "cookies",
     "<all_urls>",
     "tabs"

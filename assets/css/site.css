@@ -177,6 +177,10 @@ h3 {
   }
 }
 
+.leaflet-container .leaflet-control-attribution {
+  font-size: 10px;
+}
+
 .leaflet-container .leaflet-control-attribution a {
   color: #404040;
   font-weight: 600;

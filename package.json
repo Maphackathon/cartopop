@@ -1,7 +1,7 @@
 {
-  "name": "David Rumsey Map Collection - MapTab",
-  "version": "0.1",
-  "description": "A new tab Chrome extension",
+  "name": "david-rumsey-map-collection-maptab",
+  "version": "0.1.0",
+  "description": "A tab Chrome extension for displaying random maps from the David Rumsey Map Collection",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

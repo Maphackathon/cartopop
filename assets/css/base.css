@@ -275,7 +275,7 @@ button,
 .button,
 [type=button],
 [type=submit] {
-  background-color:#3887be;
+  background-color:rgba(0,0,0,0.5);
   text-align:center;
   color:#fff;
   display:inline-block;
@@ -328,8 +328,8 @@ button.stroke.short,
 
 .button.stroke:hover {
   background-color: transparent;
-  color: #3bb2d0;
-  border-color: #3bb2d0;
+  color: #142736;
+  border-color: #142736;
 }
 
 .button.stroke.active {
@@ -392,7 +392,7 @@ button:hover,
 .button.active,
 [type=submit]:hover,
 [type=button]:hover {
-  background-color:#3bb2d0;
+  background-color:#142736;
   }
 
 .button.loud,

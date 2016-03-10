@@ -9,11 +9,6 @@
     "newtab": "index.html"
   },
   "content_security_policy": "script-src 'self' http://*.stanford.edu/*; object-src 'self'",
-  "permissions": [
-    "cookies",
-    "<all_urls>",
-    "tabs"
-  ],
   "icons": {
     "16": "assets/images/icon16.png",
     "48": "assets/images/icon48.png",

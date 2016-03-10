@@ -2,7 +2,7 @@
   "name": "David Rumsey Map Collection - MapTab",
   "description": "A tab extension for viewing the current date and time with a random map from the David Rumsey Map Collection",
   "short_name": "DRMC - MapTab",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "incognito": "split",
   "offline_enabled": true,
   "chrome_url_overrides": {
